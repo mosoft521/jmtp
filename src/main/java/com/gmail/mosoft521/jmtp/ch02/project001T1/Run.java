@@ -13,3 +13,9 @@ public class Run {
         bthread.start();
     }
 }
+/*
+a set over!
+b set over!
+a num = 100
+b num = 200
+ */
