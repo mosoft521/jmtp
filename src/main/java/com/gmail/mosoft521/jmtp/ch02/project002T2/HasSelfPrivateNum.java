@@ -4,7 +4,8 @@ public class HasSelfPrivateNum {
 
 	private int num = 0;
 
-	synchronized public void addI(String username) {
+	public void addI(String username) {
+//	synchronized public void addI(String username) {
 		try {
 			if (username.equals("a")) {
 				num = 100;

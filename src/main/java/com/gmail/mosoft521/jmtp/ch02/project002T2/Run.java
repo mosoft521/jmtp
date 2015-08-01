@@ -14,6 +14,12 @@ public class Run {
     }
 }
 /*
+无synchronized:
+a set over!
+b set over!
+b num=200
+a num=200
+有synchronized:
 b set over!
 b num=200
 a set over!
