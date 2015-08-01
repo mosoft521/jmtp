@@ -37,6 +37,22 @@ public class Run {
         n.start();
     }
 }
+//版本一
+//由 A 计算，count=11
+//由 C 计算，count=11
+//由 B 计算，count=11
+//由 E 计算，count=10
+//由 F 计算，count=9
+//由 G 计算，count=8
+//由 D 计算，count=6
+//由 H 计算，count=5
+//由 L 计算，count=4
+//由 J 计算，count=3
+//由 I 计算，count=3
+//由 K 计算，count=2
+//由 M 计算，count=1
+//由 N 计算，count=0
+//版本二
 //由 D 计算，count=13
 //由 E 计算，count=12
 //由 C 计算，count=11
