@@ -38,5 +38,5 @@ pop=anyString=0.5961915263723685
 pop操作中的：Thread-4 线程呈wait状态
 pop操作中的：Thread-1 线程呈wait状态
 pop操作中的：Thread-3 线程呈wait状态
-暂停状态?
+Hold住(假死)
  */

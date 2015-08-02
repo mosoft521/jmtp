@@ -32,9 +32,29 @@ public class Run {
 /*
 push=1
 pop=0
-pop=anyString=0.28151527370051765
+push=1
+pop=anyString=0.04080805398828169
+pop=0
+pop=anyString=0.0061521164892915925
+pop操作中的：Thread-6 线程呈wait状态
 push=1
 pop=0
-pop=anyString=0.4380076112603043
+pop=anyString=0.2408858051035916
+pop操作中的：Thread-6 线程呈wait状态
+push=1
+pop=0
+pop=anyString=0.7413796031817864
+push=1
+pop=0
+pop=anyString=0.34263549570061114
+pop操作中的：Thread-6 线程呈wait状态
+push=1
+pop=0
+pop=anyString=0.19544093744777646
+pop操作中的：Thread-6 线程呈wait状态
+push=1
+pop=0
+pop=anyString=0.9230904923942713
+pop操作中的：Thread-6 线程呈wait状态
 ...
  */

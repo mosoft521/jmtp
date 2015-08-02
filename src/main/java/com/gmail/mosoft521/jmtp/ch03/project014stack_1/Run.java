@@ -5,12 +5,12 @@ public class Run {
         MyStack myStack = new MyStack();
 
         P p = new P(myStack);
-        C r = new C(myStack);
+        C c = new C(myStack);
 
         P_Thread pThread = new P_Thread(p);
-        C_Thread rThread = new C_Thread(r);
+        C_Thread cThread = new C_Thread(c);
         pThread.start();
-        rThread.start();
+        cThread.start();
     }
 }
 /*

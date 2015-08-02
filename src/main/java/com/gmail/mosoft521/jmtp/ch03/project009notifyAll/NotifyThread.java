@@ -15,5 +15,4 @@ public class NotifyThread extends Thread {
             lock.notifyAll();
         }
     }
-
 }

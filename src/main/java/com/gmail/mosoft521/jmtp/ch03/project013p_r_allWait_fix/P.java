@@ -1,4 +1,4 @@
-package com.gmail.mosoft521.jmtp.ch03.project012p_r_test;
+package com.gmail.mosoft521.jmtp.ch03.project013p_r_allWait_fix;
 
 //生产者
 public class P {
@@ -13,14 +13,16 @@ public class P {
     public void setValue() {
         try {
             synchronized (lock) {
-                if (!ValueObject.value.equals("")) {
+                while (!ValueObject.value.equals("")) {
+                    System.out.println("生产者 " + Thread.currentThread().getName() + " WAITING了★");
                     lock.wait();
                 }
+                System.out.println("生产者 " + Thread.currentThread().getName() + " RUNNABLE了");
                 String value = System.currentTimeMillis() + "_" + System.nanoTime();
-                System.out.println("set的值是" + value);
                 ValueObject.value = value;
-                lock.notify();
+                lock.notifyAll();
             }
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

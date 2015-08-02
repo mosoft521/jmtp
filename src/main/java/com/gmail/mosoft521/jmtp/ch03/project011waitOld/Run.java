@@ -25,11 +25,23 @@ public class Run {
     }
 }
 /*
+>>if版:
+wait begin ThreadName=subtract1Thread
+wait begin ThreadName=subtract2Thread
+wait   end ThreadName=subtract2Thread
+list size=0
+wait   end ThreadName=subtract1Thread
+Exception in thread "subtract1Thread" java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.remove(ArrayList.java:492)
+	at com.gmail.mosoft521.jmtp.ch03.project011waitOld.Subtract.subtract(Subtract.java:24)
+	at com.gmail.mosoft521.jmtp.ch03.project011waitOld.ThreadSubtract.run(ThreadSubtract.java:14)
+>>while版:
 wait begin ThreadName=subtract1Thread
 wait begin ThreadName=subtract2Thread
 wait   end ThreadName=subtract2Thread
 list size=0
 wait   end ThreadName=subtract1Thread
 wait begin ThreadName=subtract1Thread
-暂停状态?
+Hold住了?
  */

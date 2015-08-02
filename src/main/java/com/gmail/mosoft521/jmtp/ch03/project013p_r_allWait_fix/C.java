@@ -1,4 +1,4 @@
-package com.gmail.mosoft521.jmtp.ch03.project012p_r_test;
+package com.gmail.mosoft521.jmtp.ch03.project013p_r_allWait_fix;
 
 //消费者
 public class C {
@@ -13,13 +13,15 @@ public class C {
     public void getValue() {
         try {
             synchronized (lock) {
-                if (ValueObject.value.equals("")) {
+                while (ValueObject.value.equals("")) {
+                    System.out.println("消费者 " + Thread.currentThread().getName() + " WAITING了☆");
                     lock.wait();
                 }
-                System.out.println("get的值是" + ValueObject.value);
+                System.out.println("消费者 " + Thread.currentThread().getName() + " RUNNABLE了");
                 ValueObject.value = "";
-                lock.notify();
+                lock.notifyAll();
             }
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

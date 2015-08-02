@@ -14,7 +14,13 @@ public class Test {
     }
 }
 /*
+>>wait版
 begin wait()
 begin wait()
 死锁了
+>>sleep版
+begin wait()
+  end wait()
+begin wait()
+  end wait()
  */
