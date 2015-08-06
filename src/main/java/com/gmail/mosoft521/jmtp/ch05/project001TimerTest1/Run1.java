@@ -6,9 +6,6 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class Run1 {
     private static Timer timer = new Timer();
 

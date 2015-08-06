@@ -3,9 +3,6 @@ package com.gmail.mosoft521.jmtp.ch04.project001ReentrantLockTest;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class MyService {
     private Lock lock = new ReentrantLock();
 

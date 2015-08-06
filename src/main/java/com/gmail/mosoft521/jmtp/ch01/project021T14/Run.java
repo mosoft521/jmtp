@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project021T14;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class Run {
     public static void main(String[] args) {
         try {
@@ -17,3 +14,11 @@ public class Run {
         System.out.println("end!");
     }
 }
+/*
+run begin
+end!
+在沉睡中被停止!进入catch! false
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.gmail.mosoft521.jmtp.ch01.project021T14.MyThread.run(MyThread.java:9)
+ */

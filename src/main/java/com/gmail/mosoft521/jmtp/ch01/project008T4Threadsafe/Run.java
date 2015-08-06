@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project008T4Threadsafe;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class Run {
 
     public static void main(String[] args) {
@@ -11,7 +8,6 @@ public class Run {
         BLogin b = new BLogin();
         b.start();
     }
-
 }
 //版本一
 //username=b password=bb

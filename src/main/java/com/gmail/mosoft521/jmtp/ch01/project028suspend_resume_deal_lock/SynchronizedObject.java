@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project028suspend_resume_deal_lock;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class SynchronizedObject {
     synchronized public void printString() {
         System.out.println("begin");

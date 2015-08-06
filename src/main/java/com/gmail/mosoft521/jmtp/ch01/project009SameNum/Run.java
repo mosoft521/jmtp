@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project009SameNum;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class Run {
 
     public static void main(String[] args) {
@@ -22,8 +19,17 @@ public class Run {
         t5.start();
     }
 }
-//i=5 threadName=Thread-2
-//i=4 threadName=Thread-1
-//i=3 threadName=Thread-3
-//i=2 threadName=Thread-5
-//i=1 threadName=Thread-4
+/*
+>>版本一:
+i=5 threadName=Thread-2
+i=4 threadName=Thread-1
+i=3 threadName=Thread-3
+i=2 threadName=Thread-5
+i=1 threadName=Thread-4
+>>版本二:
+i=5 threadName=Thread-2
+i=1 threadName=Thread-4
+i=2 threadName=Thread-5
+i=3 threadName=Thread-1
+i=4 threadName=Thread-3
+ */

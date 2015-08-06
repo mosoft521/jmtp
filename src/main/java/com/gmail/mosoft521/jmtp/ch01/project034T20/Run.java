@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project034T20;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class Run {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {

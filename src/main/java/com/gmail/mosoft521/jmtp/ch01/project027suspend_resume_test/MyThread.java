@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project027suspend_resume_test;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class MyThread extends Thread {
     private long i = 0;
 

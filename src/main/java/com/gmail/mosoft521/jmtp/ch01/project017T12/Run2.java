@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project017T12;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class Run2 {
     public static void main(String[] args) {
         Thread.currentThread().interrupt();

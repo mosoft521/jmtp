@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project013IsaliveOtherTest;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class CountOperate extends Thread {
 
     public CountOperate() {
@@ -29,5 +26,4 @@ public class CountOperate extends Thread {
 
         System.out.println("run---end");
     }
-
 }

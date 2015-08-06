@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project011CurrentThreadExt;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class Run {
     public static void main(String[] args) {
         CountOperate c = new CountOperate();
@@ -11,11 +8,13 @@ public class Run {
         t1.start();
     }
 }
-//CountOperate---begin
-//Thread.currentThread().getName()=main
-//this.getName()=Thread-0
-//CountOperate---end
-//run---begin
-//Thread.currentThread().getName()=A
-//this.getName()=Thread-0
-//run---end
+/*
+CountOperate---begin
+Thread.currentThread().getName()=main
+this.getName()=Thread-0
+CountOperate---end
+run---begin
+Thread.currentThread().getName()=A
+this.getName()=Thread-0
+run---end
+ */

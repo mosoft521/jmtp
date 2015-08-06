@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch06.project001Singleton_0;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class MyObject {
     //立即加载方式 == 恶汉模式
     private static MyObject myObject = new MyObject();

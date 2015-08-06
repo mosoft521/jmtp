@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch02.project001T1;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class HasSelfPrivateNum {
     public void addI(String username) {
         try {

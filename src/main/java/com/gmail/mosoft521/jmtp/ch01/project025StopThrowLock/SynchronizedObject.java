@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project025StopThrowLock;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class SynchronizedObject {
 
     private String username = "a";
@@ -33,5 +30,4 @@ public class SynchronizedObject {
             e.printStackTrace();
         }
     }
-
 }

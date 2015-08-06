@@ -1,6 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project032T18;
 
-
 public class Run {
     public static void main(String[] args) {
         System.out.println("main thread begin priority=" + Thread.currentThread().getPriority());

@@ -1,8 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch01.project030suspend_resume_nosameValue;
 
-/**
- * Created by Alvin on 2015/8/1.
- */
 public class MyObject {
 
     private String username = "1";
