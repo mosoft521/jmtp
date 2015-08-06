@@ -12,6 +12,5 @@ public class ThreadB extends Thread {
     @Override
     public void run() {
         service.setUsernamePassword("b", "bb");
-
     }
 }

@@ -1,6 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch02.project018synBlockString2;
 
-
 public class ThreadB extends Thread {
 
     private Service service;

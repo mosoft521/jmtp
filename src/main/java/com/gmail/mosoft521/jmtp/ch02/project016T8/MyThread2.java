@@ -14,5 +14,4 @@ public class MyThread2 extends Thread {
         super.run();
         task.otherMethod();
     }
-
 }

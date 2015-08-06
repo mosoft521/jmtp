@@ -1,6 +1,5 @@
 package com.gmail.mosoft521.jmtp.ch02.project004synchronizedMethodLockObject;
 
-
 public class ThreadB extends Thread {
 
     private MyObject object;

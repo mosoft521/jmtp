@@ -15,5 +15,12 @@ public class Test {
     }
 }
 /*
-
+ThreadName=B执行了add方法！
+ThreadName=B退出了add方法！
+ThreadName=A执行了add方法！
+ThreadName=A退出了add方法！
+ThreadName=A执行了add方法！
+ThreadName=A退出了add方法！
+ThreadName=B执行了add方法！
+...
  */
