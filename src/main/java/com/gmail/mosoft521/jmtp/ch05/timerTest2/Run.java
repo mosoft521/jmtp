@@ -14,7 +14,7 @@ public class Run {
             String dateString = "2014-10-12 09:12:00";
             Timer timer = new Timer();
             Date dateRef = sdf.parse(dateString);
-            System.out.println("字符串时间：" + dateRef.toLocaleString() + " 当前时间："                    + new Date().toLocaleString());
+            System.out.println("字符串时间：" + dateRef.toLocaleString() + " 当前时间：" + new Date().toLocaleString());
             timer.schedule(task, dateRef, 4000);
         } catch (ParseException e) {
             e.printStackTrace();

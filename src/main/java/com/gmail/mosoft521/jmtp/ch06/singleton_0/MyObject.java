@@ -1,4 +1,4 @@
-package com.gmail.mosoft521.jmtp.ch06.project001Singleton_0;
+package com.gmail.mosoft521.jmtp.ch06.singleton_0;
 
 public class MyObject {
     //立即加载方式 == 恶汉模式
