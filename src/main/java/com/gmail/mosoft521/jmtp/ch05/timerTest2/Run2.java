@@ -43,4 +43,5 @@ public class Run2 {
 A运行了！时间为：Thu Aug 06 22:38:47 CST 2015
 B运行了！时间为：Thu Aug 06 22:38:47 CST 2015
 B运行了！时间为：Thu Aug 06 22:38:51 CST 2015
+...
  */
