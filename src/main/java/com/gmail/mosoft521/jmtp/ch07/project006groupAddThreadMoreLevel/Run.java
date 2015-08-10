@@ -34,7 +34,12 @@ public class Run {
     }
 }
 /*
+>>运行1:
 main线程中有多少个子线程组：1 名字为：A
 runMethod!
 Z
+>>运行2:
+main线程中有多少个子线程组：1 名字为：A
+Z
+runMethod!
  */
