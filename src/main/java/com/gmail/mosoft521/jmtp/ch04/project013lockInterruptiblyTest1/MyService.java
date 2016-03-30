@@ -10,13 +10,16 @@ public class MyService {
 
     public void waitMethod() {
         try {
-            lock.lock();
+//            lock.lock();
+            lock.lockInterruptibly();
             System.out.println("lock begin " + Thread.currentThread().getName());
             for (int i = 0; i < Integer.MAX_VALUE / 10; i++) {
                 String newString = new String();
                 Math.random();
             }
             System.out.println("lock   end " + Thread.currentThread().getName());
+        } catch (InterruptedException ie) {
+            ie.printStackTrace();
         } finally {
             if (lock.isHeldByCurrentThread()) {
                 lock.unlock();
