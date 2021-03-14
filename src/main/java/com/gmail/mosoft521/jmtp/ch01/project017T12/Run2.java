@@ -9,6 +9,7 @@ public class Run2 {
     }
 }
 /*
+//main线程：
 是否停止1？=true
 是否停止2？=false
 end!

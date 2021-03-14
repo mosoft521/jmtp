@@ -6,12 +6,10 @@ public class Run3 {
             MyThread thread = new MyThread();
             thread.start();
             Thread.sleep(1000);
+            System.out.println("是否停止0？=" + thread.isInterrupted());
             thread.interrupt();
             System.out.println("是否停止1？=" + thread.isInterrupted());
             System.out.println("是否停止2？=" + thread.isInterrupted());
-            System.out.println("是否停止3？=" + thread.isInterrupted());
-            System.out.println("是否停止4？=" + thread.isInterrupted());
-            System.out.println("是否停止5？=" + thread.isInterrupted());
         } catch (InterruptedException e) {
             System.out.println("main catch");
             e.printStackTrace();
@@ -23,5 +21,16 @@ public class Run3 {
 i=1
 i=2
 ...
-i=500000
+i=106492
+是否停止0？=false
+i=106493
+...
+i=106513
+是否停止1？=true
+i=106514
+...
+i=106548
+是否停止2？=true
+i=106549
+...
  */

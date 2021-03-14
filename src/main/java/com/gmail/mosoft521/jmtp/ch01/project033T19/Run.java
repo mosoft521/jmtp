@@ -1,16 +1,19 @@
 package com.gmail.mosoft521.jmtp.ch01.project033T19;
 
+import static java.lang.Thread.MAX_PRIORITY;
+import static java.lang.Thread.MIN_PRIORITY;
+
 public class Run {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
             MyThread1 thread1 = new MyThread1();
-            thread1.setPriority(10);
-//            thread1.setPriority(1);
+            thread1.setPriority(MAX_PRIORITY);
+//            thread1.setPriority(MIN_PRIORITY);
             thread1.start();
 
             MyThread2 thread2 = new MyThread2();
-            thread2.setPriority(1);
-//            thread2.setPriority(10);
+            thread2.setPriority(MIN_PRIORITY);
+//            thread2.setPriority(MAX_PRIORITY);
             thread2.start();
         }
     }

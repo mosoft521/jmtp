@@ -12,7 +12,8 @@ public class Run {
             b.setPriority(Thread.NORM_PRIORITY + 3);
             b.start();
 
-            Thread.sleep(20000);
+//            Thread.sleep(20000);
+            Thread.sleep(2000);
             a.stop();
             b.stop();
 
@@ -24,6 +25,12 @@ public class Run {
     }
 }
 /*
-a=350456605
-b=306981256
+版本1:20s
+a=1017108092
+b=-501407768
+呵呵，b都溢出了
+
+版本2:2s
+a=804243595
+b=861557967
  */
