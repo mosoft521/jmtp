@@ -5,6 +5,7 @@ import java.util.List;
 
 public class MyList {
     private List list = new ArrayList();
+//    volatile private List list = new ArrayList();
 
     public void add() {
         list.add("Alvin");

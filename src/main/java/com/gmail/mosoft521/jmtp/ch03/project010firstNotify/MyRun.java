@@ -44,7 +44,7 @@ public class MyRun {
 //        MyRun run = new MyRun();
 //        Thread b = new Thread(run.runnableB);
 //        b.start();
-//        Thread.sleep(100);
+//        Thread.sleep(3000);
 //        Thread a = new Thread(run.runnableA);
 //        a.start();
     }

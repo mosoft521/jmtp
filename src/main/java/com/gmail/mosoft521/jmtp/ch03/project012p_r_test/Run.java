@@ -6,10 +6,10 @@ public class Run {
 
         String lock = new String("");
         P p = new P(lock);
-        C r = new C(lock);
+        C c = new C(lock);
 
         ThreadP pThread = new ThreadP(p);
-        ThreadC rThread = new ThreadC(r);
+        ThreadC cThread = new ThreadC(c);
 
         pThread.start();
         try {
@@ -17,7 +17,7 @@ public class Run {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        rThread.start();
+        cThread.start();
     }
 }
 /*

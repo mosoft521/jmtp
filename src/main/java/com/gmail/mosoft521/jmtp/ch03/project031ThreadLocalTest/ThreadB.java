@@ -6,11 +6,9 @@ public class ThreadB extends Thread {
     public void run() {
         try {
             for (int i = 0; i < 100; i++) {
-                if (Tools.tl.get() == null) {
-                    Tools.tl.set("ThreadB" + (i + 1));
-                } else {
-                    System.out.println("ThreadB get Value=" + Tools.tl.get());
-                }
+                Tools.tl.set("ThreadB" + (i + 1));
+                System.out.println("ThreadB get Value=" + Tools.tl.get());
+
                 Thread.sleep(200);
             }
         } catch (InterruptedException e) {

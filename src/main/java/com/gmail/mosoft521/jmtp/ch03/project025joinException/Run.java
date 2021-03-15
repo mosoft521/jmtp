@@ -25,4 +25,5 @@ java.lang.InterruptedException
 	at java.lang.Thread.join(Thread.java:1245)
 	at java.lang.Thread.join(Thread.java:1319)
 	at com.gmail.mosoft521.jmtp.ch03.project025joinException.ThreadB.run(ThreadB.java:10)
+阻塞了
  */

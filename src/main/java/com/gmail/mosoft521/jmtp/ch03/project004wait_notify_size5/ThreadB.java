@@ -19,7 +19,7 @@ public class ThreadB extends Thread {
                         System.out.println("已发出通知！");
                     }
                     System.out.println("添加了" + (i + 1) + "个元素!");
-                    Thread.sleep(1000);
+                    Thread.sleep(100);
                 }
             }
         } catch (InterruptedException e) {

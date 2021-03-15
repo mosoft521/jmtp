@@ -28,4 +28,11 @@ begin wait() ThreadName=Thread-0
   end wait() ThreadName=Thread-0
   end wait() ThreadName=Thread-1
   end wait() ThreadName=Thread-2
+>>第二次运行：
+begin wait() ThreadName=Thread-1
+begin wait() ThreadName=Thread-0
+begin wait() ThreadName=Thread-2
+  end wait() ThreadName=Thread-2
+  end wait() ThreadName=Thread-0
+  end wait() ThreadName=Thread-1
  */

@@ -6,8 +6,8 @@ public class Service {
         try {
             synchronized (lock) {
                 System.out.println("begin wait()");
-//                lock.wait();
-                Thread.sleep(1000);
+                lock.wait();
+//                Thread.sleep(1000);
                 System.out.println("  end wait()");
             }
         } catch (InterruptedException e) {

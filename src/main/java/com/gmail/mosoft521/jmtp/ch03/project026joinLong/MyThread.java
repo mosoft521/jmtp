@@ -7,6 +7,7 @@ public class MyThread extends Thread {
         try {
             System.out.println("begin Timer=" + System.currentTimeMillis());
             Thread.sleep(5000);
+            System.out.println("myThread end");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

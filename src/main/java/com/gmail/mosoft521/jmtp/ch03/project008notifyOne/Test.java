@@ -22,10 +22,26 @@ public class Test {
     }
 }
 /*
+一次Notify版本：
+begin wait() ThreadName=Thread-1
+begin wait() ThreadName=Thread-2
+begin wait() ThreadName=Thread-0
+  end wait() ThreadName=Thread-1
+  阻塞了...
+多次Notify版本：
+>>第一次运行：
 begin wait() ThreadName=Thread-1
 begin wait() ThreadName=Thread-2
 begin wait() ThreadName=Thread-0
   end wait() ThreadName=Thread-1
   end wait() ThreadName=Thread-0
   end wait() ThreadName=Thread-2
+
+>>第2次运行
+begin wait() ThreadName=Thread-0
+begin wait() ThreadName=Thread-1
+begin wait() ThreadName=Thread-2
+  end wait() ThreadName=Thread-0
+  end wait() ThreadName=Thread-2
+  end wait() ThreadName=Thread-1
  */

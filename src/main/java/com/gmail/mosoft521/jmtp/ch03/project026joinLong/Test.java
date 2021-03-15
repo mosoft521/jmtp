@@ -7,8 +7,8 @@ public class Test {
             MyThread threadTest = new MyThread();
             threadTest.start();
 
-//             threadTest.join(2000);// 只等2秒
-            Thread.sleep(2000);
+             threadTest.join(2000);// 只等2秒
+//            Thread.sleep(2000);
 
             System.out.println("  end timer=" + System.currentTimeMillis());
         } catch (InterruptedException e) {

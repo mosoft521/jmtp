@@ -1,7 +1,6 @@
 package com.gmail.mosoft521.jmtp.ch03.project005waitReleaseLock;
 
 public class ThreadA extends Thread {
-
     private Object lock;
 
     public ThreadA(Object lock) {
