@@ -11,7 +11,7 @@ public class Run {
             ThreadA a = new ThreadA(service, userinfo);
             a.setName("a");
             a.start();
-            Thread.sleep(50);
+            Thread.sleep(500);
             ThreadB b = new ThreadB(service, userinfo);
             b.setName("b");
             b.start();

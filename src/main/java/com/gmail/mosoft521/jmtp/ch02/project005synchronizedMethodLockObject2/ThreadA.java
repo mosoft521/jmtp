@@ -12,6 +12,7 @@ public class ThreadA extends Thread {
     @Override
     public void run() {
         super.run();
+        System.out.println("ThreadA.run(): " + this.getName());
         object.methodA();
     }
 }

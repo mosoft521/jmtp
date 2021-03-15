@@ -35,4 +35,12 @@ b num=200
 bThread:11
 a num=100
 aThread:10
+第三次：
+main:1
+a set over!
+b set over!
+b num=200
+bThread:12
+a num=100
+aThread:11
  */

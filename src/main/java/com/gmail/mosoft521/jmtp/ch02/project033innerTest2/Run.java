@@ -31,6 +31,7 @@ public class Run {
     }
 }
 /*
+>>第一次：
 T3 进入InnerClass2类中的method1方法
 k=0
 T2 进入InnerClass1类中的method2方法
@@ -67,4 +68,42 @@ i=7
 i=8
 i=9
 T1 离开InnerClass1类中的method1方法
+>>第二次：
+T1 进入InnerClass1类中的method1方法
+i=0
+T2 进入InnerClass1类中的method2方法
+j=0
+i=1
+j=1
+i=2
+j=2
+i=3
+j=3
+i=4
+j=4
+j=5
+i=5
+i=6
+j=6
+j=7
+i=7
+i=8
+j=8
+j=9
+i=9
+T2 离开InnerClass1类中的method2方法
+T1 离开InnerClass1类中的method1方法
+T3 进入InnerClass2类中的method1方法
+k=0
+k=1
+k=2
+k=3
+k=4
+k=5
+k=6
+k=7
+k=8
+k=9
+T3 离开InnerClass2类中的method1方法
+>>结论：T1和T3同一个锁InnerClass2 in2，T2另一个锁InnerClass1 in1
  */

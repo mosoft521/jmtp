@@ -14,7 +14,7 @@ public class Run {
 }
 /*
 >>同步方法:
-
+methodA begin
 >>同步块:
 methodA begin
 methodB begin

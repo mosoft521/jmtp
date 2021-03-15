@@ -6,18 +6,18 @@ public class MyObject {
         try {
             System.out.println("begin methodA threadName=" + Thread.currentThread().getName());
             Thread.sleep(5000);
-            System.out.println("end endTime=" + System.currentTimeMillis());
+            System.out.println("end methodA endTime=" + System.currentTimeMillis());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    //    public void methodB() {
+//        public void methodB() {
     synchronized public void methodB() {
         try {
             System.out.println("begin methodB threadName=" + Thread.currentThread().getName() + " begin time=" + System.currentTimeMillis());
             Thread.sleep(5000);
-            System.out.println("end");
+            System.out.println("end methodB");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

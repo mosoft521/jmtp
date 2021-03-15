@@ -16,24 +16,39 @@ public class Run {
 /*
 >>methodB无synchronized
 第一次:
+ThreadB.run(): B
+ThreadA.run(): A
+begin methodB threadName=B begin time=1615683075819
 begin methodA threadName=A
-begin methodB threadName=B begin time=1438473302657
-end
-end endTime=1438473307658
+end methodB
+end methodA endTime=1615683080819
 第二次:
+ThreadA.run(): A
+ThreadB.run(): B
 begin methodA threadName=A
-begin methodB threadName=B begin time=1438473356931
-end endTime=1438473361911
-end
+begin methodB threadName=B begin time=1615683101471
+end methodA endTime=1615683106471
+end methodB
+第三次：
+ThreadB.run(): B
+begin methodB threadName=B begin time=1615683126419
+ThreadA.run(): A
+begin methodA threadName=A
+end methodB
+end methodA endTime=1615683131419
 >>methodB有synchronized
 第一次:
-begin methodB threadName=B begin time=1438473382077
-end
+ThreadA.run(): A
+ThreadB.run(): B
 begin methodA threadName=A
-end endTime=1438473392077
+end methodA endTime=1615683235764
+begin methodB threadName=B begin time=1615683235764
+end methodB
 第二次:
+ThreadA.run(): A
+ThreadB.run(): B
+begin methodB threadName=B begin time=1615683263147
+end methodB
 begin methodA threadName=A
-end endTime=1438473432236
-begin methodB threadName=B begin time=1438473432236
-end
+end methodA endTime=1615683273147
  */

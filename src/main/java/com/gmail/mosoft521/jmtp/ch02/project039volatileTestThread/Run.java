@@ -15,9 +15,9 @@ public class Run {
 /*
 >>无synchronized
 count=100
+count=300
 count=200
 count=400
-count=300
 count=500
 count=600
 count=700
@@ -35,8 +35,8 @@ count=1800
 count=1900
 count=2000
 count=2100
-count=2200
 count=2300
+count=2200
 count=2400
 count=2500
 count=2600
@@ -60,10 +60,10 @@ count=4300
 count=4400
 count=4500
 count=4600
-count=4800
-count=4800
-count=5000
-count=5000
+count=4885
+count=4785
+count=4772
+count=4985
 >>有synchronized
 count=100
 count=200

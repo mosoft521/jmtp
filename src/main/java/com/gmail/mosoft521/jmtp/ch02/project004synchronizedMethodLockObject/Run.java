@@ -58,4 +58,11 @@ begin methodA threadName=A
 MyObject.methodA() end
 begin methodA threadName=B
 MyObject.methodA() end
+第四次：
+ThreadA.run(): A
+ThreadB.run(): B
+begin methodA threadName=B
+MyObject.methodA() end
+begin methodA threadName=A
+MyObject.methodA() end
  */

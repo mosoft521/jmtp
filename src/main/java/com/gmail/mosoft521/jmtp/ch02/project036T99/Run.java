@@ -10,5 +10,12 @@ public class Run {
     }
 }
 /*
-
+run printStringMethod threadName=main
+run printStringMethod threadName=main
+run printStringMethod threadName=main
+run printStringMethod threadName=main
+run printStringMethod threadName=main
+run printStringMethod threadName=main
+run printStringMethod threadName=main
+>>停不下来的原因：main线程一直在处理while()循环
  */

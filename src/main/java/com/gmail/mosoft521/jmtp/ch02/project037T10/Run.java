@@ -11,8 +11,11 @@ public class Run {
     }
 }
 /*
+第一次：
 我要停止它！stopThread=main
 run printStringMethod threadName=Thread-0
 第二次:
 我要停止它！stopThread=main
+不稳定：
+书上说：-server模式停止不了，我没实验出来
  */
