@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Service {
 
-    private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+    private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
     public void read() {
         try {
@@ -21,5 +21,4 @@ public class Service {
             e.printStackTrace();
         }
     }
-
 }

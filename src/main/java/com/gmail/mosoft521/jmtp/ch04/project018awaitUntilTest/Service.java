@@ -26,8 +26,6 @@ public class Service {
 
     public void notifyMethod() {
         try {
-            Calendar calendarRef = Calendar.getInstance();
-            calendarRef.add(Calendar.SECOND, 10);
             lock.lock();
             System.out.println("notify begin timer=" + System.currentTimeMillis());
             condition.signalAll();

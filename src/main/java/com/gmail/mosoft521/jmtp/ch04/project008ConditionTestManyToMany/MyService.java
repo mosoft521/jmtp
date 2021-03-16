@@ -12,13 +12,14 @@ public class MyService {
     public void set() {
         try {
             lock.lock();
-            while (hasValue == true) {
+            while (hasValue) {
                 System.out.println("有可能★★连续");
                 condition.await();
             }
             System.out.println("打印★");
             hasValue = true;
-            condition.signalAll();
+            condition.signal();
+//            condition.signalAll();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -29,13 +30,14 @@ public class MyService {
     public void get() {
         try {
             lock.lock();
-            while (hasValue == false) {
+            while (!hasValue) {
                 System.out.println("有可能☆☆连续");
                 condition.await();
             }
             System.out.println("打印☆");
             hasValue = false;
-            condition.signalAll();
+            condition.signal();
+//            condition.signalAll();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {

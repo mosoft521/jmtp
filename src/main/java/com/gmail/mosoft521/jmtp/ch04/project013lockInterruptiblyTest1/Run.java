@@ -25,14 +25,14 @@ public class Run {
     }
 }
 /*
-//(一)lock.lock();
+//lock.lock()版本：
 lock begin A
 main end!
 lock   end A
 lock begin B
 lock   end B
 
-//（二）lock.lockInterruptibly();
+//lock.lockInterruptibly()版本：
 lock begin A
 main end!
 java.lang.InterruptedException

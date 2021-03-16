@@ -20,9 +20,12 @@ public class Run {
         }
         Thread.sleep(2000);
         service.notityMethod();
+        Thread.sleep(2000);
+        service.notityMethod();
     }
 }
 /*
 有没有线程正在等待newCondition？true 线程数是多少？10
+有没有线程正在等待newCondition？true 线程数是多少？9
 Hold住
  */

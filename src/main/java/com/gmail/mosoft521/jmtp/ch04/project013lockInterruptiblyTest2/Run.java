@@ -18,7 +18,8 @@ public class Run {
         Thread threadB = new Thread(runnableRef);
         threadB.setName("B");
         threadB.start();
-        threadB.interrupt();
+        threadB.interrupt();// 打标记
+        System.out.println("main end!");
     }
 }
 /*

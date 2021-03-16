@@ -10,5 +10,5 @@ public class Run {
 }
 /*
 A
-(wait?)
+...阻塞了...
  */

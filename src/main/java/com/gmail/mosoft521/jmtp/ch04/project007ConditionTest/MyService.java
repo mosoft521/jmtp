@@ -12,7 +12,7 @@ public class MyService {
     public void set() {
         try {
             lock.lock();
-            while (hasValue == true) {
+            while (hasValue) {
                 condition.await();
             }
             System.out.println("打印★");
@@ -28,7 +28,7 @@ public class MyService {
     public void get() {
         try {
             lock.lock();
-            while (hasValue == false) {
+            while (!hasValue) {
                 condition.await();
             }
             System.out.println("打印☆");
