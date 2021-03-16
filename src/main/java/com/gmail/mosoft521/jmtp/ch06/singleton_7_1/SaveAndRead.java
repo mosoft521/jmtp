@@ -45,6 +45,10 @@ public class SaveAndRead {
     }
 }
 /*
+//版本一：
+2133927002
+931919113
+//版本二：加了readResolve()
 325040804
 调用了readResolve方法！
 325040804

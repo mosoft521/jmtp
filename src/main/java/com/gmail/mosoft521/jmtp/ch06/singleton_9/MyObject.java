@@ -9,13 +9,13 @@ public enum MyObject {
 
     private Connection connection;
 
-    private MyObject() {
+    MyObject() {
         try {
             System.out.println("调用了MyObject的构造");
-            String url = "jdbc:sqlserver://localhost:1079;databaseName=ghydb";
-            String username = "sa";
-            String password = "";
-            String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+            String url = "jdbc:mysql://localhost:3306/test?useSSL=false";
+            String username = "root";
+            String password = "admin";
+            String driverName = "com.mysql.jdbc.Driver";
             Class.forName(driverName);
             connection = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException e) {

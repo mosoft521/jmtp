@@ -15,13 +15,13 @@ public class MyObject {
 
         private Connection connection;
 
-        private MyEnumSingleton() {
+        MyEnumSingleton() {
             try {
-                System.out.println("创建MyObject对象");
-                String url = "jdbc:sqlserver://localhost:1079;databaseName=y2";
-                String username = "sa";
-                String password = "";
-                String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+                System.out.println("调用了MyObject的构造");
+                String url = "jdbc:mysql://localhost:3306/test?useSSL=false";
+                String username = "root";
+                String password = "admin";
+                String driverName = "com.mysql.jdbc.Driver";
                 Class.forName(driverName);
                 connection = DriverManager.getConnection(url, username,
                         password);

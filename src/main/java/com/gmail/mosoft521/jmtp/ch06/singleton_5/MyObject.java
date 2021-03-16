@@ -7,17 +7,16 @@ public class MyObject {
     private MyObject() {
     }
 
-    // 使用双检测机制来解决问题
+    // 使用DCL双检测机制来解决问题
     // 即保证了不需要同步代码的异步
     // 又保证了单例的效果
     public static MyObject getInstance() {
         try {
-            if (myObject != null) {
-            } else {
+            if (null == myObject) {
                 // 模拟在创建对象之前做一些准备性的工作
                 Thread.sleep(3000);
                 synchronized (MyObject.class) {
-                    if (myObject == null) {
+                    if (null == myObject) {
                         myObject = new MyObject();
                     }
                 }

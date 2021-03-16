@@ -9,8 +9,7 @@ public class MyObject {
 
     public static MyObject getInstance() {
         try {
-            if (myObject != null) {
-            } else {
+            if (myObject == null) {
                 // 模拟在创建对象之前做一些准备性的工作
                 Thread.sleep(3000);
                 // 使用synchronized (MyObject.class)

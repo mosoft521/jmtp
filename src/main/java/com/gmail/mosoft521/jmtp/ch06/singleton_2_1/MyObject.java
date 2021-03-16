@@ -7,13 +7,12 @@ public class MyObject {
     private MyObject() {
     }
 
-    // ����ͬ������Ч��̫����
-    // ��������������
+    // 设置同步方法效率太低了
+    // 整个方法被上锁
     synchronized public static MyObject getInstance() {
         try {
-            if (myObject != null) {
-            } else {
-                // ģ���ڴ�������֮ǰ��һЩ׼���ԵĹ���
+            if (myObject == null) {
+                //模拟在创建对象之前做一些准备性的工作
                 Thread.sleep(3000);
                 myObject = new MyObject();
             }

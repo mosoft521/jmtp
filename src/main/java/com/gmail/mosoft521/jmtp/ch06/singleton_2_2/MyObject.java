@@ -13,8 +13,7 @@ public class MyObject {
             // synchronized public static MyObject getInstance()
             // 的写法，效率一样很低，全部代码被上锁
             synchronized (MyObject.class) {
-                if (myObject != null) {
-                } else {
+                if (myObject == null) {
                     // 模拟在创建对象之前做一些准备性的工作
                     Thread.sleep(3000);
 

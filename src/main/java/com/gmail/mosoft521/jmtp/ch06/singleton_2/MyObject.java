@@ -11,7 +11,7 @@ public class MyObject {
         try {
             if (myObject != null) {
             } else {
-                // ģ���ڴ�������֮ǰ��һЩ׼���ԵĹ���
+                //模拟在创建对象之前做一些准备性的工作
                 Thread.sleep(3000);
                 myObject = new MyObject();
             }
