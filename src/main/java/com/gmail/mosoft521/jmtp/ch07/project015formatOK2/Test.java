@@ -1,12 +1,8 @@
 package com.gmail.mosoft521.jmtp.ch07.project015formatOK2;
 
-import java.text.SimpleDateFormat;
-
 public class Test {
 
     public static void main(String[] args) {
-
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
         String[] dateStringArray = new String[]{"2000-01-01", "2000-01-02",
                 "2000-01-03", "2000-01-04", "2000-01-05", "2000-01-06",
@@ -14,7 +10,7 @@ public class Test {
 
         MyThread[] threadArray = new MyThread[10];
         for (int i = 0; i < 10; i++) {
-            threadArray[i] = new MyThread(sdf, dateStringArray[i]);
+            threadArray[i] = new MyThread(dateStringArray[i]);
         }
         for (int i = 0; i < 10; i++) {
             threadArray[i].start();
@@ -22,5 +18,6 @@ public class Test {
     }
 }
 /*
-
+解决方案：ThreadLocal
+没有任何输出，即没有报错！
  */

@@ -19,7 +19,7 @@ public class MyThread extends Thread {
     public void run() {
         try {
             Date dateRef = sdf.parse(dateString);
-            String newDateString = sdf.format(dateRef).toString();
+            String newDateString = sdf.format(dateRef);
             if (!newDateString.equals(dateString)) {
                 System.out.println("ThreadName=" + this.getName()
                         + "报错了 日期字符串：" + dateString + " 转换成的日期为："

@@ -16,50 +16,24 @@ public class Run {
 /*
 死循环中：线程1
 死循环中：线程1
+死循环中：线程9
+死循环中：线程1
+Exception in thread "报错线程" 死循环中：线程9
 死循环中：线程1
 死循环中：线程1
+死循环中：线程9
+死循环中：线程2
+死循环中：线程10
+死循环中：线程9
 死循环中：线程1
+java.lang.NumberFormatException: For input string: "a"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.gmail.mosoft521.jmtp.ch07.project017threadGroup_1.MyThread.run(MyThread.java:14)
+死循环中：线程2
 死循环中：线程1
-死循环中：线程1
-死循环中：线程1
-死循环中：线程2
-死循环中：线程2
-死循环中：线程2
-死循环中：线程2
-死循环中：线程2
-死循环中：线程2
-死循环中：线程2
-死循环中：线程2
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程5
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
-死循环中：线程3
+死循环中：线程7
+死循环中：线程8
 ...
  */

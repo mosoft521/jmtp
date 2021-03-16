@@ -21,13 +21,15 @@ public class Run {
         // 分配空间，但不一定全部用完
         ThreadGroup[] listGroup1 = new ThreadGroup[Thread.currentThread()
                 .getThreadGroup().activeGroupCount()];
-        // 非递归取得子对象，也就是不取得Z线程
+        // 传入true是递归取得子组及子孙组
         Thread.currentThread().getThreadGroup().enumerate(listGroup1, true);
         for (int i = 0; i < listGroup1.length; i++) {
             if (listGroup1[i] != null) {
                 System.out.println(listGroup1[i].getName());
             }
         }
+        System.out.println();
+        // 非递归取得子对象，也就是不取得B线程
         ThreadGroup[] listGroup2 = new ThreadGroup[Thread.currentThread()
                 .getThreadGroup().activeGroupCount()];
         Thread.currentThread().getThreadGroup().enumerate(listGroup2, false);
@@ -43,5 +45,6 @@ public class Run {
 /*
 A
 B
+
 A
  */

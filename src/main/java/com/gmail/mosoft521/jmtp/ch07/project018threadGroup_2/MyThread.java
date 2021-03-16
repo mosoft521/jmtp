@@ -12,7 +12,7 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         int numInt = Integer.parseInt(num);
-        while (this.isInterrupted() == false) {
+        while (!this.isInterrupted()) {
             System.out.println("死循环中：" + Thread.currentThread().getName());
         }
     }

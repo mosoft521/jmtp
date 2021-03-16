@@ -4,12 +4,12 @@ import java.text.SimpleDateFormat;
 
 public class DateTools {
 
-    private static ThreadLocal<SimpleDateFormat> tl = new ThreadLocal<SimpleDateFormat>();
+    private static ThreadLocal<SimpleDateFormat> tl = new ThreadLocal<>();
 
     public static SimpleDateFormat getSimpleDateFormat(String datePattern) {
-        SimpleDateFormat sdf = null;
+        SimpleDateFormat sdf;
         sdf = tl.get();
-        if (sdf == null) {
+        if (null == sdf) {
             sdf = new SimpleDateFormat(datePattern);
             tl.set(sdf);
         }
