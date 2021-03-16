@@ -7,7 +7,7 @@ import java.util.TimerTask;
 public class Run {
     public static void main(String[] args) {
         MyTask task = new MyTask();
-        Timer timer = new Timer();
+        Timer timer = new Timer(true);
         System.out.println("当前时间：" + new Date().toLocaleString());
         timer.schedule(task, 7000);
     }
